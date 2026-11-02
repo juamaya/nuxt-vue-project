@@ -41,7 +41,11 @@ const projects = [
   { src: "/projects/proyecto7.png", alt: "Ciudad" },
   { src: "/projects/proyecto8.png", alt: "Playa" },
   { src: "/projects/proyecto9.png", alt: "Desierto" },
-];
+].map(image => ({
+  ...image,
+  src: `${config.app.baseURL}${image.src.replace(/^\//, '')}`
+}));
+
 </script>
 <template>
   <section class="hero">
