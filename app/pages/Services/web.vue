@@ -9,10 +9,10 @@ const config = useRuntimeConfig();
 const logos = [
   { src: "logos/node.jpg", alt: "Node.js" },
   { src: "logos/next.jpg", alt: "Next.js" },
-  { src: "logos/nuxt.jpg", alt: "Nuxt.js" },
-  { src: "logos/js.png", alt: "JavaScript" },
+  { src: "logos/ts.jpg", alt: "Nuxt.js" },
+  { src: "logos/ts.jpg ", alt: "JavaScript" },
   { src: "logos/ts.jpg", alt: "TypeScript" },
-  { src: "logos/vite.jpg", alt: "Vite" },
+  { src: "logos/ts.jpg", alt: "Vite" },
   { src: "logos/nuxttailwind.png", alt: "Nuxt Tailwind" },
 ].map((image) => ({
   ...image,
