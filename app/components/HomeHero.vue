@@ -24,13 +24,13 @@
           </p>
 
           <div class="hero-actions">
-            <a href="/contact" class="btn-main">
+            <NuxtLink to="/contact" class="btn-main">
               Empezar proyecto →
-            </a>
+            </NuxtLink>
 
-            <a href="/services/web" class="btn-outline">
+            <NuxtLink to="/services/web" class="btn-outline">
               Descubrir servicios
-            </a>
+            </NuxtLink>
           </div>
 
           <div class="hero-stats">

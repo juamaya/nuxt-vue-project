@@ -40,9 +40,9 @@
           </div>
 
           <div class="d-flex flex-wrap gap-3 mt-5">
-            <a href="/contact" class="btn-secondary-custom">
+            <NuxtLink to="/contact" class="btn-secondary-custom">
               Solicitar presupuesto →
-            </a>
+            </NuxtLink>
  
           </div>
 
