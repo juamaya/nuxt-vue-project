@@ -31,29 +31,42 @@ const handleSlideChange = (index: number) => {
 }
 const images = [
   {
-    src: 'https://picsum.photos/id/1015/500/300',
+    src: '/projects/proyecto1.png',
     alt: 'Montañas'
   },
   {
-    src: 'https://picsum.photos/id/1016/500/300',
+    src: '/projects/proyecto2.png',
     alt: 'Naturaleza'
   },
   {
-    src: 'https://picsum.photos/id/1018/500/300',
+    src: '/projects/proyecto3.png',
     alt: 'Paisaje'
   },
   {
-    src: 'https://picsum.photos/id/1019/500/300',
+    src: '/projects/proyecto4.png',
     alt: 'Lago'
   },
   {
-    src: 'https://picsum.photos/id/1020/500/300',
+    src: '/projects/proyecto5.png',
     alt: 'Bosque'
   },
   {
-    src: 'https://picsum.photos/id/1024/500/300',
+    src: '/projects/proyecto6.png',
     alt: 'Animal'
-  }
+  },
+  {
+    src: '/projects/proyecto7.png',
+    alt: 'Ciudad'
+  },
+  {
+    src: '/projects/proyecto8.png',
+    alt: 'Playa'
+  },
+  {
+    src: '/projects/proyecto9.png',
+    alt: 'Desierto'
+  },
+ 
 ]
 
 </script>
@@ -67,7 +80,9 @@ const images = [
       <p class="lead mt-3">
         Desarrollamos soluciones digitales modernas.
       </p>
-
+  <main>
+    <HomeHero />
+  </main>
         <div class="container py-5">
 
     <BaseCarousel
@@ -90,7 +105,7 @@ const images = [
    <section class="container-fluid py-5">
 
     <h2 class="text-center mb-4">
-      Galería de imágenes
+      Galería de proyectos
     </h2>
 
     <BaseMarquee

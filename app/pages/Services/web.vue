@@ -25,6 +25,10 @@ const logos = [
   <div>
     <h1>Web Development</h1>
 
+    <main>
+      <WebDevelopment />
+    </main>
+
     <section class="container-fluid py-5">
       <h2 class="text-center mb-4">Tecnologías que utilizamos</h2>
 
@@ -39,5 +43,7 @@ const logos = [
         :pause-on-hover="true"
       />
     </section>
+
+    
   </div>
 </template>

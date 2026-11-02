@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 useSeoMeta({
   title: "Juamaya26 | Design",
@@ -6,9 +5,9 @@ useSeoMeta({
     "Descubre nuestro enfoque en el diseño de experiencias digitales.",
 });
 
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 
-const designImage = `${config.app.baseURL}images/design.jpg`
+const designImage = `${config.app.baseURL}images/design.jpg`;
 
 const webFeatures = [
   {
@@ -45,19 +44,21 @@ const technologies = [
 </script>
 
 <template>
-  <BaseWebDesign
-    badge="Diseño Web & Desarrollo"
-    title="Creamos páginas web modernas que impulsan tu negocio."
-    subtitle="Diseño, creatividad y tecnología."
-    description="Diseñamos experiencias digitales únicas para que tu marca destaque en Internet."
-    secondary-description="Desarrollamos sitios web rápidos, intuitivos y adaptados a todos los dispositivos utilizando tecnologías modernas."
-    :image="designImage"
-    image-alt="Diseño web moderno"
-    button-text="Solicitar presupuesto"
-    button-link="/contact"
-    image-position="left"
-    :features="webFeatures"
-    :stats="webStats"
-    :technologies="technologies"
-  />
+   
+    <BaseWebDesign
+      badge="Diseño Web & Desarrollo"
+      title="Creamos páginas web modernas que impulsan tu negocio."
+      subtitle="Diseño, creatividad y tecnología."
+      description="Diseñamos experiencias digitales únicas para que tu marca destaque en Internet."
+      secondary-description="Desarrollamos sitios web rápidos, intuitivos y adaptados a todos los dispositivos utilizando tecnologías modernas."
+      :image="designImage"
+      image-alt="Diseño web moderno"
+      button-text="Solicitar presupuesto"
+      button-link="/contact"
+      image-position="left"
+      :features="webFeatures"
+      :stats="webStats"
+      :technologies="technologies"
+    />
+    
 </template>
