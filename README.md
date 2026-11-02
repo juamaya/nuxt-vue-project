@@ -442,6 +442,7 @@ Crea el archivo:
 Añade el siguiente contenido:
 
 ```yaml
+
 name: Deploy Nuxt to GitHub Pages
 
 on:
@@ -468,17 +469,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Generate static website
-        run: npm run generate
+        run: pnpm run generate
         env:
           NODE_ENV: production
 
@@ -500,6 +506,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 ```
 
 ## 6. Activar GitHub Pages
