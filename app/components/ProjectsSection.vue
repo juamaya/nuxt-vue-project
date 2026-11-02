@@ -129,9 +129,9 @@ const projects = [
 
       <!-- Botón inferior -->
       <div class="text-center mt-5">
-        <a href="/contact" class="all-projects-btn">
+        <NuxtLink to="/contact" class="all-projects-btn">
           ¿Tienes un proyecto en mente? Hablemos →
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>
