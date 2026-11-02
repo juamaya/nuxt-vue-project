@@ -139,7 +139,7 @@ const projects = [
 
 <style scoped>
 .projects-section {
-  background: #0b1020;
+ 
   color: #f8fafc;
 }
 

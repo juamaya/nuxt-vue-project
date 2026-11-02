@@ -198,7 +198,7 @@ withDefaults(defineProps<Props>(), {
 
 <style scoped>
 .seo-section {
-  background: var(--bg-primary);
+  background: transparent;
   color: var(--text-primary);
   overflow: hidden;
 }

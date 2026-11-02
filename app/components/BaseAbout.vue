@@ -181,7 +181,7 @@ withDefaults(defineProps<Props>(), {
 
 <style scoped>
 .about-section {
-  background: var(--bg-primary);
+  background: transparent;
   color: var(--text-primary);
   overflow: hidden;
 }

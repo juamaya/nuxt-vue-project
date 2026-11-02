@@ -237,7 +237,7 @@ withDefaults(defineProps<Props>(), {
 
 <style scoped>
 .web-design-section {
-  background: var(--bg-primary);
+   background: transparent;
   color: var(--text-primary);
   overflow: hidden;
 }

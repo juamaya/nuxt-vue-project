@@ -107,7 +107,7 @@
 
 <style scoped>
 .web-section {
-  background: #0b1020;
+ 
   color: #f1f5f9;
   overflow: hidden;
   min-height: 650px;

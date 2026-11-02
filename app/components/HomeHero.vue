@@ -129,7 +129,7 @@
 
 <style scoped>
 .home-hero {
-  background: #0b1020;
+   background: transparent;
   color: #f8fafc;
   overflow: hidden;
   position: relative;
