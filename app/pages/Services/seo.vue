@@ -5,6 +5,10 @@ useSeoMeta({
     "Mejora la visibilidad de tu página web con nuestras estrategias de SEO.",
 });
 
+const config = useRuntimeConfig()
+
+const seoImage = `${config.app.baseURL}images/seo.jpg`
+
 const seoFeatures = [
   {
     icon: "bi-search",
@@ -37,7 +41,7 @@ const seoStats = [
     subtitle="Posicionamiento web inteligente."
     description="Desarrollamos estrategias SEO para mejorar la visibilidad de tu página web y atraer visitantes interesados en tus servicios."
     secondary-description="Optimizamos cada detalle técnico y de contenido para conseguir una web más rápida, accesible y preparada para los motores de búsqueda."
-    image="/images/seo.jpg"
+    :image="seoImage"
     image-alt="Análisis y posicionamiento SEO"
     button-text="Solicitar asesoramiento"
     button-link="/contact"

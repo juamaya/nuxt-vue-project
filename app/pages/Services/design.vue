@@ -1,9 +1,14 @@
+
 <script setup lang="ts">
 useSeoMeta({
   title: "Juamaya26 | Design",
   description:
     "Descubre nuestro enfoque en el diseño de experiencias digitales.",
 });
+
+const config = useRuntimeConfig()
+
+const designImage = `${config.app.baseURL}images/design.jpg`
 
 const webFeatures = [
   {
@@ -46,7 +51,7 @@ const technologies = [
     subtitle="Diseño, creatividad y tecnología."
     description="Diseñamos experiencias digitales únicas para que tu marca destaque en Internet."
     secondary-description="Desarrollamos sitios web rápidos, intuitivos y adaptados a todos los dispositivos utilizando tecnologías modernas."
-    image="/images/design.jpg"
+    :image="designImage"
     image-alt="Diseño web moderno"
     button-text="Solicitar presupuesto"
     button-link="/contact"
