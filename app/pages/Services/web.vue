@@ -11,9 +11,9 @@ const logos = [
   { src: "logos/next.jpg", alt: "Next.js" },
   { src: "logos/ts.jpg", alt: "TypeScript" },
   { src: "logos/nuxttailwind.png", alt: "Nuxt Tailwind" },
-  { src: "logos/vite.jpg", alt: "Vite" },
+  { src: "logos/vite1.jpg", alt: "Vite" },
   { src: "logos/vue.jpg", alt: "Vue.js" },
-  { src: "logos/nuxt.jpg", alt: "Nuxt.js" },
+  { src: "logos/nuxt1.jpg", alt: "Nuxt.js" },
   { src: "logos/js.jpg", alt: "JavaScript" },
 ].map((image) => ({
   ...image,

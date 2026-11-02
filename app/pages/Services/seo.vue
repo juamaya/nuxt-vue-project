@@ -7,7 +7,7 @@ useSeoMeta({
 
 const config = useRuntimeConfig();
 
-const seoImage = `${config.app.baseURL}images/seo.jpg`;
+const seoImage = `${config.app.baseURL}images/seo1.jpg`;
 
 const seoFeatures = [
   {
