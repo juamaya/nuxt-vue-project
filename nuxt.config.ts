@@ -9,6 +9,13 @@ export default defineNuxtConfig({
   ],
 
   app: {
+
+    baseURL: (globalThis as typeof globalThis & {
+      process?: { env?: Record<string, string | undefined> };
+    }).process?.env?.NODE_ENV === 'production'
+      ? '/nuxt-vue-project/'
+      : '/',
+      
     head: {
       title: "Juamaya26",
       titleTemplate: "%s",
