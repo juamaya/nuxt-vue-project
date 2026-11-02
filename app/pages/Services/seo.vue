@@ -5,9 +5,9 @@ useSeoMeta({
     "Mejora la visibilidad de tu página web con nuestras estrategias de SEO.",
 });
 
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 
-const seoImage = `${config.app.baseURL}images/seo.jpg`
+const seoImage = `${config.app.baseURL}images/seo.jpg`;
 
 const seoFeatures = [
   {

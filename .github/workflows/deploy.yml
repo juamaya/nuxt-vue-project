@@ -39,10 +39,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Clean Nuxt
+        run: pnpm exec nuxi cleanup
+
       - name: Generate static website
         run: pnpm run generate
         env:
           NODE_ENV: production
+          NUXT_TELEMETRY_DISABLED: 1
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

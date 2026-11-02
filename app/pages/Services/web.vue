@@ -1,24 +1,23 @@
-
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Juamaya26 | Web Development',
-  description: 'Creamos aplicaciones web modernas con Vue y Nuxt.'
-})
+  title: "Juamaya26 | Web Development",
+  description: "Creamos aplicaciones web modernas con Vue y Nuxt.",
+});
 
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 
 const logos = [
-  { src: 'logos/node.jpg', alt: 'Node.js' },
-  { src: 'logos/next.jpg', alt: 'Next.js' },
-  { src: 'logos/nuxt.jpg', alt: 'Nuxt.js' },
-  { src: 'logos/js.png', alt: 'JavaScript' },
-  { src: 'logos/ts.jpg', alt: 'TypeScript' },
-  { src: 'logos/vite.jpg', alt: 'Vite' },
-  { src: 'logos/nuxttailwind.png', alt: 'Nuxt Tailwind' }
-].map(image => ({
+  { src: "logos/node.jpg", alt: "Node.js" },
+  { src: "logos/next.jpg", alt: "Next.js" },
+  { src: "logos/nuxt.jpg", alt: "Nuxt.js" },
+  { src: "logos/js.png", alt: "JavaScript" },
+  { src: "logos/ts.jpg", alt: "TypeScript" },
+  { src: "logos/vite.jpg", alt: "Vite" },
+  { src: "logos/nuxttailwind.png", alt: "Nuxt Tailwind" },
+].map((image) => ({
   ...image,
-  src: `${config.app.baseURL}${image.src}`
-}))
+  src: `${config.app.baseURL}${image.src}`,
+}));
 </script>
 
 <template>
@@ -26,9 +25,7 @@ const logos = [
     <h1>Web Development</h1>
 
     <section class="container-fluid py-5">
-      <h2 class="text-center mb-4">
-        Tecnologías que utilizamos
-      </h2>
+      <h2 class="text-center mb-4">Tecnologías que utilizamos</h2>
 
       <BaseMarquee
         :images="logos"
