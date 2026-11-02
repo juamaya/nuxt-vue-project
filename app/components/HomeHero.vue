@@ -28,7 +28,7 @@
               Empezar proyecto →
             </a>
 
-            <a href="/Services/web" class="btn-outline">
+            <a href="/services/web" class="btn-outline">
               Descubrir servicios
             </a>
           </div>
